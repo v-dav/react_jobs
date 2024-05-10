@@ -11,7 +11,7 @@ const App = () => {
 
 	// Add job
 	const addJob =  async (newJob) => {
-		const res = await fetch('/api/jobs', {
+		const res = await fetch('https://test-api-ui2v.onrender.com/jobs', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ const App = () => {
 
 	// Delete job
 	const deleteJob = async (id) => {
-		const res = await fetch(`/api/jobs/${id}`, {
+		const res = await fetch(`https://test-api-ui2v.onrender.com/jobs/${id}`, {
 			method: 'DELETE'
 		})
 		return
@@ -31,7 +31,7 @@ const App = () => {
 
 	// Update job
 	const updateJob = async (job) => {
-		const res = await fetch(`/api/jobs/${job.id}`, {
+		const res = await fetch(`https://test-api-ui2v.onrender.com/jobs/${job.id}`, {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json'
