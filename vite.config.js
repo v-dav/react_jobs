@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/react_jobs',
+  base: '/react_jobs/',
   plugins: [react()],
   server: {
     port: 3000,
